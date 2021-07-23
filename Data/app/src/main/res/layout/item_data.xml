@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/item_anime_show_cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res/auto"
+    card_view:cardCornerRadius = "8dp"
+    android:layout_margin="4dp"
+    android:padding="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="10"
+        >
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/MHXXX"
+            android:layout_weight="3"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="MHXXX"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_weight="5"
+            />
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="VIEW MORE"
+            android:layout_weight="2"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
